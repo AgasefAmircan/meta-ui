@@ -1,0 +1,246 @@
+// @import "https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap";
+/* import all components css */
+// @import "./components/alert/alert.css";
+// @import "./components/avatar/avatar.css";
+// @import "./components/badges/badges.css";
+// @import "./components/button/button.css";
+// @import "./components/cards/cards.css";
+// @import "./components/grid/grid.css";
+// @import "./components/image/image.css";
+// @import "./components/input/input.css";
+// @import "./components/list/list.css";
+// @import "./components/navigation/navigation.css";
+// @import "./components/slider/slider.css";
+// @import "./components/text-utilities/text-utilities.css";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+}
+:root {
+	--primary-color: #ff3b30d9;
+	--primary-hover: #ff3b30;
+	--dark-text-color: #3f4049;
+	--light-text-color: #5a5a5a;
+	--white-color: #ffffff;
+	--error-color: #dc3545;
+	--success-color: #1b7052;
+	--warning-color: #ff9204;
+}
+html {
+	font-size: 62.5%;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+li {
+	list-style: none;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 2.5rem 0;
+}
+.active {
+	color: var(--primary-color);
+	&:hover {
+		color: var(--primary-hover);
+	}
+}
+.xl-text {
+	font-size: 4.8rem;
+	line-height: 6.4rem;
+}
+.lg-text {
+	font-size: 3.2rem;
+	line-height: 4rem;
+}
+.md-text {
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+}
+.sm-text {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+.xs-text {
+	font-size: 0.8rem;
+	line-height: 1.6rem;
+}
+.mt-4 {
+	margin-top: 4rem;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.logo {
+		color: var(--light-text-color);
+		font-weight: 900;
+	}
+	.nav-right {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+		a {
+			.fab {
+				margin-left: 4rem;
+				color: var(--light-text-color);
+				&:hover {
+					color: var(--primary-color);
+				}
+			}
+		}
+	}
+}
+main {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	.description {
+		max-width: 65%;
+		margin: 0 auto;
+		font-weight: 700;
+		margin-bottom: 3rem;
+		color: var(--dark-text-color);
+	}
+	.landing-btn-container {
+		.btn {
+			display: inline-block;
+			font-weight: 700;
+			background-color: var(--primary-color);
+			width: 12rem;
+			padding: 1rem;
+			border-radius: 0.4rem;
+		}
+		.btn-primary {
+			color: var(--white-color);
+			margin-right: 2rem;
+			&:hover {
+				background-color: var(--primary-hover);
+			}
+		}
+		.btn-secondary {
+			color: var(--primary-color);
+			background-color: transparent;
+			border: 1px solid var(--primary-color);
+			&:hover {
+				color: var(--primary-hover);
+				background-color: transparent;
+				border: 1px solid var(--primary-hover);
+			}
+		}
+	}
+}
+.flex-container {
+	display: flex;
+	margin-top: 10rem;
+	width: 100%;
+	aside {
+		width: 15%;
+	}
+	.content-section {
+		width: 70%;
+		margin-left: 10rem;
+	}
+}
+.sidebar-main-heading {
+	padding: 0 2rem 1rem 2rem;
+	border-bottom: 1px solid lightgray;
+	font-weight: 700;
+	color: var(--light-text-color);
+}
+.sidebar-sub-heading {
+	padding: 1rem 2rem;
+	margin-bottom: 2rem;
+	font-weight: 700;
+	color: var(--dark-text-color);
+}
+.all-components {
+	font-weight: 700;
+	padding: 1rem 2rem;
+	color: var(--dark-text-color);
+	li {
+		margin-bottom: 1.8rem;
+	}
+}
+.intro-heading {
+	letter-spacing: 1.5px;
+	font-weight: 900;
+	color: var(--dark-text-color);
+	margin-bottom: 2rem;
+}
+.intro-sub-heading {
+	font-size: 1.7rem;
+	font-weight: 700;
+	color: var(--light-text-color);
+	margin-bottom: 4rem;
+}
+iframe {
+	width: 70%;
+	height: 205px;
+	border: 0;
+	transform: scale(1);
+	overflow: hidden;
+}
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 4rem;
+	>.sm-text {
+		font-weight: 700;
+	}
+	.fas {
+		font-size: 1.2rem;
+		margin: 0 0.3rem;
+	}
+}
+.button-iframe {
+	iframe {
+		width: 50%;
+	}
+}
+@media (max-width: 1024px) {
+	main {
+		.description {
+			max-width: 80%;
+			font-size: 3.2rem;
+			line-height: 4rem;
+		}
+	}
+	iframe {
+		width: 100%;
+	}
+	.flex-container {
+		.content-section {
+			width: 80%;
+		}
+	}
+	.button-iframe {
+		iframe {
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 768px) {
+	main {
+		.description {
+			max-width: 100%;
+		}
+	}
+	.flex-container {
+		aside {
+			display: none;
+		}
+		.content-section {
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+}
