@@ -57,7 +57,7 @@ const Input = () => {
                 <Link to="/image">Image</Link>
               </div>
               <div className="next-page sm-text">
-                <Link to="/text">
+                <Link to="/text-utilities">
                   Text Utilities
                 </Link>
                 <i className="fas fa-chevron-right"></i>

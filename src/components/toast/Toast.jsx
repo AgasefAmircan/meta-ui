@@ -3,24 +3,18 @@ import Navbar from "../Navbar";
 import Aside from "../Aside";
 import "./toast.css";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Toast = () => {
-  // const btnToast = document.querySelector(".btn-toast");
-  // const toast = document.querySelector(".toast");
-  // const toastClose = document.querySelector(".toast-close");
-
-  // const showToast = () => {
-  //   toast.classList.add("show-toast");
-  //   setTimeout(() => {
-  //     toast.classList.remove("show-toast");
-  //   }, 2000);
-  // };
-
-  // const hideToast = () => {
-  //   toast.classList.remove("show-toast");
-  // };
-
-  // toastClose.addEventListener("click", hideToast);
-  // btnToast.addEventListener("click", showToast);
+  const showToastMessage = () => {
+    toast.warning(
+      "Warning Notification !",
+      {
+        position: toast.POSITION.TOP_RIGHT,
+      },
+    );
+  };
 
   return (
     <div>
@@ -37,7 +31,13 @@ const Toast = () => {
                 of an action.
               </div>
 
-              <button className="btn btn-primary btn-toast">Show Toast</button>
+              <button
+                className="btn btn-primary btn-toast"
+                onClick={showToastMessage}
+              >
+                Show Toast
+                <ToastContainer autoClose={2000} />
+              </button>
               <div className="toast">
                 <span className="toast-msg">This is an example of Toast</span>
                 <button className="toast-close">Ok</button>

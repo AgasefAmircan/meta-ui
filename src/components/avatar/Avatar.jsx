@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Aside from "../Aside";
 import Navbar from "../Navbar";
-import Intro from "../Intro";
-import Alert from "../alert/Alert";
 import './avatar.css'
 const Avatar = () => {
   return (
@@ -93,10 +91,10 @@ const Avatar = () => {
             <footer>
               <div className="previous-page sm-text">
                 <i className="fas fa-chevron-left"></i>
-                <Link to={Intro}>Introduction</Link>
+                <Link to='/introduction'>Introduction</Link>
               </div>
               <div className="next-page sm-text">
-                <Link to={Alert}>Alert</Link>
+                <Link to='/alert'>Alert</Link>
                 <i className="fas fa-chevron-right"></i>
               </div>
             </footer>

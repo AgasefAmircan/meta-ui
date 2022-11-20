@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Aside from "../Aside";
 import Navbar from "../Navbar";
 import "./alert.css";
@@ -67,10 +68,10 @@ const Alert = () => {
             <footer>
               <div className="previous-page sm-text">
                 <i className="fas fa-chevron-left"></i>
-                <a href="../avatar/avatar.html">Avatar</a>
+                <Link to="/avatar">Avatar</Link>
               </div>
               <div className="next-page sm-text">
-                <a href="../badges/badges.html">Badge</a>
+                <Link to="/badges">Badge</Link>
                 <i className="fas fa-chevron-right"></i>
               </div>
             </footer>

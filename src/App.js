@@ -39,7 +39,7 @@ function App() {
           <Route path="/navigation" element={<Navigation />}/>
           <Route path="/rating" element={<Rating />}/>
           <Route path="/slider" element={<Slider />}/>
-          <Route path="/text" element={<Text />}/>
+          <Route path="/text-utilities" element={<Text />}/>
           <Route path="/toast" element={<Toast />}/>
         </Routes>
       </Router>
