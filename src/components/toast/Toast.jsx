@@ -37,7 +37,7 @@ const Toast = () => {
               >
                 Show Toast
                 <ToastContainer autoClose={2000} />
-              </button>
+              </button> 
               <div className="toast">
                 <span className="toast-msg">This is an example of Toast</span>
                 <button className="toast-close">Ok</button>
