@@ -66,7 +66,7 @@ const Aside = () => {
                 <NavLink to="/slider">Slider</NavLink >
               </li>
               <li>
-                <NavLink to="/rating/">Rating</NavLink >
+                <NavLink to="/rating">Rating</NavLink >
               </li>
               <li>
                 <NavLink to="/modal">Modal</NavLink >
