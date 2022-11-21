@@ -9,7 +9,7 @@ Meta UI is a light weight CSS library which helps you in developing fast , respo
 ## Technology Used :
 
 - React,React-router-dom
-- CSS
+- CSS,SCSS
 
 
 ## Components :
